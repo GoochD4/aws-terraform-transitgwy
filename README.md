@@ -41,7 +41,7 @@ To enable such a scenario, three Transit Gateway Route Tables are created.  One 
 * Clone the repository.
 * Change ACCESS_KEY and SECRET_KEY values in terraform.tfvars.example.  And rename `terraform.tfvars.example` to `terraform.tfvars`.
 * Change parameters in the variables.tf.
-* If you desire to remove either the Managment VPC or Spoke2 VPC, please either remove those files (vpc-mgmt.tf, vpc-spoke2.tf) or add .example to their respective filenames (vpc-mgmt.tf.example, vpc-spoke2.tf.example)
+* If you desire to remove either the Managment VPC or Spoke2 VPC, please either remove those files (vpc-mgmt.tf, vpc-spoke2.tf) or add .example to their respective filenames (vpc-mgmt.tf.example, vpc-spoke2.tf.example) and you will need to remove or add ".example" to mgmt-redist-to-spoke2.tf.  Sorry, this is cludgy, but I'm still learning Terraform. 
 * Initialize the providers and modules:
   ```sh
   $ terraform init
